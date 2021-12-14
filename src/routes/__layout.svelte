@@ -1,5 +1,6 @@
 <script>
-   import "$lib/mocks/msw/api/mocks-msw-api";
+   import "$msw";
+   import "$styles/globals";
 </script>
 
 <slot />

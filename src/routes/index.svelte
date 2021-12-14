@@ -14,9 +14,9 @@
    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
 
-<button on:click="{onClick}">Fetch!!</button>
+<button class="bg-neutral-600 text-white p-3 rounded" on:click="{onClick}">Fetch!!</button>
 
-<!-- <style lang="scss">
+<style lang="scss">
    $primary-color: red;
    $secondary-color: green;
 
@@ -26,4 +26,4 @@
          color: $secondary-color;
       }
    }
-</style> -->
+</style>

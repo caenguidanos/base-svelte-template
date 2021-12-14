@@ -2,9 +2,9 @@
    "compilerOptions": {
       "strict": true,
       "moduleResolution": "node",
-      "module": "es2020",
-      "lib": ["es2020", "DOM"],
-      "target": "es2020",
+      "module": "es2022",
+      "lib": ["es2021", "DOM"],
+      "target": "es2021",
       "importsNotUsedAsValues": "error",
       "isolatedModules": true,
       "resolveJsonModule": true,
@@ -28,7 +28,12 @@
       "paths": {
          "$lib": ["src/lib"],
          "$lib/*": ["src/lib/*"],
-         "$msw": ["src/lib/mocks/msw/api/mocks-msw-api.ts"]
+         "$msw": [
+            "src/lib/domain/shared/mocks/msw/api/auto-inject/shared-mocks-msw-api-auto-inject.ts"
+         ],
+         "$msw/browser": ["src/lib/domain/shared/mocks/msw/api/shared-mocks-msw-api-browser.ts"],
+         "$msw/server": ["src/lib/domain/shared/mocks/msw/api/shared-mocks-msw-api-server.ts"],
+         "$styles/globals": ["src/lib/domain/shared/styles/globals.scss"]
       },
       "types": ["jest", "svelte"]
    },

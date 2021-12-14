@@ -3,7 +3,7 @@ module.exports = {
    verbose: true,
    errorOnDeprecated: true,
    passWithNoTests: true,
-   extensionsToTreatAsEsm: [".ts", ".tsx"],
+   extensionsToTreatAsEsm: [".ts"],
    testMatch: ["**/src/lib/**/*.spec.ts"],
    transform: {
       "^.+\\.svelte$": [
@@ -30,5 +30,5 @@ module.exports = {
          statements: 0 // 🔥
       }
    },
-   collectCoverageFrom: ["**/src/lib/**/*.{ts,svelte}", "!**/mocks/**"]
+   collectCoverageFrom: ["**/src/lib/**/*.{ts,svelte}", "!**/mocks/msw/**"]
 };

@@ -11,7 +11,16 @@ const config = {
       vite: {
          resolve: {
             alias: {
-               $msw: path.resolve("./src/mocks/msw/api/mocks-msw-api.ts")
+               $msw: path.resolve(
+                  "./src/lib/domain/shared/mocks/msw/api/auto-inject/shared-mocks-msw-api-auto-inject.ts"
+               ),
+               "$msw/browser": path.resolve(
+                  "./src/lib/domain/shared/mocks/msw/api/shared-mocks-msw-api-browser.ts"
+               ),
+               "$msw/server": path.resolve(
+                  "./src/lib/domain/shared/mocks/msw/api/shared-mocks-msw-api-server.ts"
+               ),
+               "$styles/globals": path.resolve("./src/lib/domain/shared/styles/globals.scss")
             }
          }
       }
