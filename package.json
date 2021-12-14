@@ -1,5 +1,5 @@
 {
-   "name": "caenguidanos.io-svelte",
+   "name": "base-svelte-template",
    "version": "0.0.1",
    "scripts": {
       "dev": "svelte-kit dev",
