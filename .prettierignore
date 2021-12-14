@@ -2,3 +2,4 @@
 static/mockServiceWorker.js
 /coverage
 /.svelte-kit
+pnpm-lock.yaml
