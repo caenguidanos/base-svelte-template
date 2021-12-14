@@ -1,3 +1,4 @@
 .gitignore
 static/mockServiceWorker.js
 /coverage
+/.svelte-kit
