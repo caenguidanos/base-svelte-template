@@ -2,6 +2,7 @@ module.exports = {
    bail: 1,
    verbose: true,
    errorOnDeprecated: true,
+   passWithNoTests: true,
    extensionsToTreatAsEsm: [".ts", ".tsx"],
    testMatch: ["**/src/lib/**/*.spec.ts"],
    transform: {
