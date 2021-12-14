@@ -9,9 +9,7 @@ function sleep(ms: number) {
 }
 
 export const get: RequestHandler = async () => {
-   console.log("Y se durmió");
    await sleep(1000);
-   console.log("Y dejo de dormir");
 
    return {
       status: 200,

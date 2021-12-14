@@ -1,9 +1,17 @@
-import { test } from "uvu";
-import * as assert from "uvu/assert";
+/**
+ * @jest-environment jsdom
+ */
 
-test("smoke", () => {
-   console.log("yeepa");
-   assert.ok(true);
+import { fireEvent, render, screen } from "@testing-library/svelte";
+
+import Count from "./Count.svelte";
+
+describe("smoke", () => {
+   it("s", async () => {
+      render(Count);
+
+      const ev = await fireEvent.click(screen.getByTestId("button"));
+
+      expect(ev).toBe(true);
+   });
 });
-
-test.run();
